@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+
+/* Define custom colors directly if not using config */
+@layer base {
+  :root {
+    --color-dark: #121212;
+    --color-darkgray: #1e1e1e;
+    --color-accent: #e63946;
+  }
+}
+
+/* Add custom color utilities */
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.bg-darkgray {
+  background-color: var(--color-darkgray);
+}
+.text-accent, .hover\:text-accent:hover {
+  color: var(--color-accent);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.bg-accent\/20 {
+  background-color: rgba(230, 57, 70, 0.2);
+}
+.bg-accent\/5 {
+  background-color: rgba(230, 57, 70, 0.05);
+}
+.bg-accent\/90 {
+  background-color: rgba(230, 57, 70, 0.9);
+}
+.hover\:bg-accent\/90:hover {
+  background-color: rgba(230, 57, 70, 0.9);
+}
+.border-accent\/20 {
+  border-color: rgba(230, 57, 70, 0.2);
+}
+.shadow-accent\/20 {
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.2);
+}
+.hover\:shadow-accent\/20:hover {
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.2);
+}
+.from-accent\/20 {
+  --tw-gradient-from: rgba(230, 57, 70, 0.2);
+}
+.to-accent\/5 {
+  --tw-gradient-to: rgba(230, 57, 70, 0.05);
+}
+
+/* Icon alignment fixes */
+.fa, .fas, .fab {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+/* Additional useful styles */
+section {
+  scroll-margin-top: 4rem;
+}
+
+input, textarea {
+  color-scheme: dark;
+}
+
+/* Loading screen styles */
+#loading-screen {
+    transition: opacity 0.5s ease-out;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .animate-bounce {
+    animation: bounce 1.5s infinite;
+  }

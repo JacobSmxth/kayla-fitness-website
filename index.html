@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayla | Strength Training Specialist</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkgray text-gray-200">
+    <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">KAYLA<span class="text-accent">FITNESS</span></a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#services" class="hover:text-accent transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-accent transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars h-6 w-6 icon-container"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section with Fixed Background -->
+    <section class="relative h-screen">
+        <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('public/background.jpg')"></div>
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="relative container mx-auto px-6 h-full flex items-center">
+            <div class="w-full md:w-1/2 text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Transform Your <span class="text-accent">Strength</span></h1>
+                <h2 class="text-xl md:text-2xl mb-8">Personalized strength training programs designed for your goals</h2>
+                <button class="bg-accent hover:bg-accent/90 text-white py-3 px-8 rounded-md font-bold transition-all cursor-pointer shadow-lg hover:shadow-accent/20">
+                    Get in Contact with me!
+                </button>
+            </div>
+            <div class="hidden md:block w-1/2 flex justify-end">
+                <!-- TODO: Change image -->
+                <img src="public/kaylaPic.png" alt="Kayla - Strength Training Coach" class="h-[80vh] object-contain">
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">About <span class="text-accent">Kayla</span></h2>
+                    <p class="mb-4">Kayla does stuff. And more stuff. and has done stuff. Once did more stuff. Was over with that stuff but moved to that stuff.</p>
+                    <p class="mb-4">She stuff and more workout and gym and workout the gym with clkient but no workout gym workout.</p>
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-accent rounded-full icon-container mr-4">
+                                <i class="fas fa-medal text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Certified Trainer</h3>
+                                <p class="text-sm text-gray-400">{All Certificates}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-accent rounded-full icon-container mr-4">
+                                <i class="fas fa-bolt text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">&infin; years experience</h3>
+                                <p class="text-sm text-gray-400">Helping clients get HUGE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-[80%] aspect-[3/4] bg-gradient-to-b from-accent/20 to-accent/5 rounded-xl p-1">
+                        <div class="w-full h-full bg-darkgray rounded-lg overflow-hidden">
+                            <img src="public/kaylaPic.png" alt="Kayla" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-darkgray">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Strength Training <span class="text-accent">Services</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark p-8 rounded-xl hover:scale-105 transition-transform">
+                    <div class="w-14 h-14 bg-accent/20 rounded-full icon-container mb-6">
+                        <i class="fas fa-dumbbell text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Personal Training</h3>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat, nisl a porttitor fermentum, nulla arcu aliquam dui.</p>
+                </div>
+                <div class="bg-dark p-8 rounded-xl hover:scale-105 transition-transform">
+                    <div class="w-14 h-14 bg-accent/20 rounded-full icon-container mb-6">
+                        <i class="fas fa-clipboard-list text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Custom Programs</h3>
+                    <p class="text-gray-400">Etiam sagittis leo eget massa condimentum, at placerat eros efficitur. Donec pretium tincidunt magna.</p>
+                </div>
+                <div class="bg-dark p-8 rounded-xl hover:scale-105 transition-transform">
+                    <div class="w-14 h-14 bg-accent/20 rounded-full icon-container mb-6">
+                        <i class="fas fa-apple-alt text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Nutritional Guidance</h3>
+                    <p class="text-gray-400">Integer elementum eros sed purus tincidunt posuere. Nam consequat nisi sed augue laoreet.</p>
+                </div>
+            </div>
+            
+            <!-- Schedule Box -->
+            <div class="mt-16 bg-dark p-8 rounded-xl border border-accent/20">
+                <h3 class="text-2xl font-bold mb-6 text-center">Training Schedule</h3>
+                <p class="text-center mb-6">Available for training sessions Monday through Saturday</p>
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                    <div class="bg-darkgray p-4 rounded-lg text-center">
+                        <h4 class="font-bold">Monday</h4>
+                        <p class="text-sm text-gray-400">8AM - 7PM</p>
+                    </div>
+                    <div class="bg-darkgray p-4 rounded-lg text-center">
+                        <h4 class="font-bold">Tuesday</h4>
+                        <p class="text-sm text-gray-400">8AM - 7PM</p>
+                    </div>
+                    <div class="bg-darkgray p-4 rounded-lg text-center">
+                        <h4 class="font-bold">Wednesday</h4>
+                        <p class="text-sm text-gray-400">8AM - 7PM</p>
+                    </div>
+                    <div class="bg-darkgray p-4 rounded-lg text-center">
+                        <h4 class="font-bold">Thursday</h4>
+                        <p class="text-sm text-gray-400">8AM - 7PM</p>
+                    </div>
+                    <div class="bg-darkgray p-4 rounded-lg text-center">
+                        <h4 class="font-bold">Friday</h4>
+                        <p class="text-sm text-gray-400">8AM - 7PM</p>
+                    </div>
+                    <div class="bg-darkgray p-4 rounded-lg text-center">
+                        <h4 class="font-bold">Saturday</h4>
+                        <p class="text-sm text-gray-400">9AM - 3PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Client <span class="text-accent">Success Stories</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-darkgray p-8 rounded-xl">
+                    <div class="flex mb-4 rating-stars">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="italic mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat, nisl a porttitor fermentum, nulla arcu aliquam dui.</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">My name Jeff</h4>
+                            <p class="text-sm text-gray-400">Client for 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-darkgray p-8 rounded-xl">
+                    <div class="flex mb-4 rating-stars">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="italic mb-6">Etiam sagittis leo eget massa condimentum, at placerat eros efficitur. Donec pretium tincidunt magna, id commodo nulla posuere eu.</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Ben Dover</h4>
+                            <p class="text-sm text-gray-400">Client for 1 year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-darkgray p-8 rounded-xl">
+                    <div class="flex mb-4 rating-stars">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="italic mb-6">Integer elementum eros sed purus tincidunt posuere. Nam consequat nisi sed augue laoreet, at commodo quam eleifend.</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Eminem</h4>
+                            <p class="text-sm text-gray-400">Client for 6 months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-darkgray">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Get In <span class="text-accent">Touch</span></h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="w-full md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2">Name</label>
+                            <input type="text" id="name" class="w-full p-3 bg-dark rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full p-3 bg-dark rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full p-3 bg-dark rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-accent hover:bg-accent/90 text-white py-3 px-8 rounded-md font-bold transition-all shadow-lg hover:shadow-accent/20">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="bg-dark p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-bold mb-6">Connect With Kayla</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-accent/20 rounded-full icon-container mr-4">
+                                    <i class="fas fa-phone text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p class="text-gray-400">(770) 871-1900</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-accent/20 rounded-full icon-container mr-4">
+                                    <i class="fas fa-envelope text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-gray-400">kaylasemail@email.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-accent/20 rounded-full icon-container mr-4">
+                                    <i class="fas fa-link text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Social Media</h4>
+                                    <div class="flex mt-2 space-x-4">
+                                        <a href="#" class="text-gray-400 hover:text-accent">
+                                            <i class="fab fa-linkedin-in h-6 w-6"></i>
+                                        </a>
+                                        <a href="#" class="text-gray-400 hover:text-accent">
+                                            <i class="fab fa-instagram h-6 w-6"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-8 bg-dark border-t border-accent/20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white">KAYLA<span class="text-accent">FITNESS</span></h3>
+                    <p class="text-gray-400 mt-2">Strength training specialist</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-accent transition-colors">About</a>
+                    <a href="#services" class="text-gray-400 hover:text-accent transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-400 hover:text-accent transition-colors">Contact</a>
+                </div>
+            </div>
+            <hr class="border-accent/10 my-8">
+            <div class="text-center text-gray-500 text-xs mb-2">
+                Photo by <a href="https://unsplash.com/@dncerullo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="hover:text-accent">Danielle Cerullo</a> on <a href="https://unsplash.com/photos/woman-standing-surrounded-by-exercise-equipment-CQfNt66ttZM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="hover:text-accent">Unsplash</a>
+            </div>
+            <div class="text-center text-gray-500 text-sm">
+                &copy; 2025 Kayla Training. All rights reserved.
+                <div class="mt-1">Developed by <a href="http://www.jsmitty.com" class="text-accent hover:underline" target="_blank">JSmitty</a></div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+<!-- Loading Screen -->
+<div id="loading-screen" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-dark">
+    <div class="mb-8">
+        <i class="fas fa-dumbbell text-accent text-5xl animate-bounce"></i>
+    </div>
+    <div class="w-64 h-2 bg-darkgray rounded-full overflow-hidden">
+        <div id="loading-bar" class="h-full bg-accent w-0 transition-all duration-1000"></div>
+    </div>
+    <p class="mt-4 text-white text-xl">Loading Kayla Fitness...</p>
+</div>
+</html>
