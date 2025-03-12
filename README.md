@@ -1,23 +1,3 @@
-
-<details>
-<summary>Thought for 4.15 seconds</summary>
-The user is asking me to create a perfect README file for their project, specifying that there should be no installation instructions. Based on our previous conversation, I understand this is for the "kayla-smith-website" project, which is a strength training website for someone named Kayla.
-
-A good README for this type of project should include:
-
-1. Project title
-2. Description of the website
-3. Technologies used (HTML, CSS with TailwindCSS, JavaScript)
-4. Features
-5. Credits (including the photo credit that was mentioned earlier)
-6. Live demo link (which would be on GitHub Pages)
-7. Screenshots (though I can't generate these, I can suggest including them)
-8. Contact information (for the developer, JSmitty)
-
-Since they specifically mentioned "no installation," I'll omit any setup or installation instructions that would typically be included.
-
-I'll create a comprehensive, professional README.md file that highlights the website's features while maintaining a clean, organized structure.
-</details>
 # Kayla Fitness - Strength Training Specialist
 
 ![Kayla Fitness Logo](public/kaylaPic.png)
