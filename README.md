@@ -6,7 +6,7 @@ A professional website for Kayla Smith, a dedicated strength training specialist
 
 ## Live Demo
 
-Visit the live website: [Kayla Fitness](https://jacobsmxth.github.io/kayla-smith-website/)
+Visit the live website: [Kayla Fitness](https://jacobsmxth.github.io/kayla-fitness-website/)
 
 ## Features
 
