@@ -1,7 +1,5 @@
 # Kayla Fitness - Strength Training Specialist
 
-![Kayla Fitness Logo](public/kaylaPic.png)
-
 ## Description
 
 A professional website for Kayla Smith, a dedicated strength training specialist offering personalized fitness programs and nutritional guidance. This sleek, responsive site showcases Kayla's expertise and services in a modern, engaging format.
