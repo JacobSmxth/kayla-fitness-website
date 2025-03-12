@@ -28,10 +28,6 @@ Visit the live website: [Kayla Fitness](https://jacobsmxth.github.io/kayla-fitne
 
 ## Screenshots
 
-![Hero Section](https://placeholder-for-screenshot.com/hero-section.jpg)
-![Services Overview](https://placeholder-for-screenshot.com/services-section.jpg)
-
-*Note: Replace placeholder URLs with actual screenshot links*
 
 ## Project Structure
 
