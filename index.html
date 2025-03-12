@@ -3,41 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayla | Strength Training Specialist</title>
+    
+    <title>Kayla Fitness | Professional Strength Training & Personal Trainer in Alpharetta, GA</title>
+    <meta name="description" content="Transform your strength with Kayla, certified personal trainer specializing in customized strength training programs, nutritional guidance, and fitness coaching in Alpharetta, GA. Schedule your free consultation today!">
+    <meta name="keywords" content="strength training, personal trainer, fitness coach, workout programs, nutritional guidance, weight loss, muscle building, Alpharetta trainer, fitness specialist, Kayla Fitness">
+    <meta name="author" content="Kayla Smith">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://jacobsmxth.github.io/kayla-fitness-website/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jacobsmxth.github.io/kayla-fitness-website/">
+    <meta property="og:title" content="Kayla Fitness | Strength Training Specialist in Alpharetta, GA">
+    <meta property="og:description" content="Transform your strength with personalized training programs. Book your consultation with certified trainer Kayla today!">
+    <meta property="og:image" content="https://jacobsmxth.github.io/kayla-fitness-website/public/kaylaPic.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jacobsmxth.github.io/kayla-fitness-website/">
+    <meta property="twitter:title" content="Kayla Fitness | Strength Training Specialist in Alpharetta, GA">
+    <meta property="twitter:description" content="Transform your strength with personalized training programs. Book your consultation with certified trainer Kayla today!">
+    <meta property="twitter:image" content="https://jacobsmxth.github.io/kayla-fitness-website/public/kaylaPic.png">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="bg-darkgray text-gray-200">
-    <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-sm">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-white">KAYLA<span class="text-accent">FITNESS</span></a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#about" class="hover:text-accent transition-colors">About</a>
-                <a href="#services" class="hover:text-accent transition-colors">Services</a>
-                <a href="#testimonials" class="hover:text-accent transition-colors">Testimonials</a>
-                <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+    <header>
+        <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-sm" aria-label="Main navigation">
+            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <a href="https://jacobsmxth.github.io/kayla-fitness-website/" class="text-2xl font-bold text-white transition-colors duration-500 hover:text-accent">KAYLA<span class="text-accent">FITNESS</span></a>
+                <div class="hidden md:flex space-x-6" role="navigation">
+                    <a href="#about" class="hover:text-accent transition-colors">About</a>
+                    <a href="#services" class="hover:text-accent transition-colors">Services</a>
+                    <a href="#testimonials" class="hover:text-accent transition-colors">Testimonials</a>
+                    <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars h-6 w-6 icon-container"></i>
+                </button>
             </div>
-            <button class="md:hidden">
-                <i class="fas fa-bars h-6 w-6 icon-container"></i>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
     
     <!-- Hero Section with Fixed Background -->
-    <section class="relative h-screen">
-        <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('public/background.jpg')"></div>
-        <div class="absolute inset-0 bg-black/70"></div>
+    <section class="relative h-screen" aria-label="Hero banner">
+        <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('public/background.jpg')" aria-hidden="true"></div>
+        <div class="absolute inset-0 bg-black/70" aria-hidden="true"></div>
         <div class="relative container mx-auto px-6 h-full flex items-center">
             <div class="w-full md:w-1/2 text-left">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Transform Your <span class="text-accent">Strength</span></h1>
                 <h2 class="text-xl md:text-2xl mb-8">Personalized strength training programs designed for your goals</h2>
-                <button class="bg-accent hover:bg-accent/90 text-white py-3 px-8 rounded-md font-bold transition-all cursor-pointer shadow-lg hover:shadow-accent/20">
-                    Get in Contact with me!
-                </button>
+                <a href="#contact" class="bg-accent hover:bg-accent/90 text-white py-3 px-8 rounded-md font-bold transition-all cursor-pointer shadow-lg hover:shadow-accent/20">
+                    Get Started with a Free Consultation
+                </a>
             </div>
             <div class="hidden md:block w-1/2 flex justify-end">
-                <!-- TODO: Change image -->
-                <img src="public/kaylaPic.png" alt="Kayla - Strength Training Coach" class="h-[80vh] object-contain">
+                <img src="public/kaylaPic.png" alt="Kayla - Professional Strength Training Coach in Alpharetta, GA" class="h-[80vh] object-contain" loading="eager">
             </div>
         </div>
     </section>
@@ -48,25 +86,25 @@
             <div class="flex flex-col md:flex-row gap-10 items-center">
                 <div class="w-full md:w-1/2">
                     <h2 class="text-3xl font-bold mb-6">About <span class="text-accent">Kayla</span></h2>
-                    <p class="mb-4">Kayla does stuff. And more stuff. and has done stuff. Once did more stuff. Was over with that stuff but moved to that stuff.</p>
-                    <p class="mb-4">She stuff and more workout and gym and workout the gym with clkient but no workout gym workout.</p>
+                    <p class="mb-4">With just about 1 year of experience in strength training and fitness coaching, Kayla has already helped quite a few clients in Alpharetta, GA achieve their fitness goals through personalized training programs and nutritional guidance.</p>
+                    <p class="mb-4">Specializing in functional strength training, weight management, and muscle development, Kayla's approach focuses on creating sustainable fitness habits that transform both body and mind for long-term results.</p>
                     <div class="mt-8 grid grid-cols-2 gap-4">
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-accent rounded-full icon-container mr-4">
-                                <i class="fas fa-medal text-white"></i>
+                                <i class="fas fa-medal text-white" aria-hidden="true"></i>
                             </div>
                             <div>
                                 <h3 class="font-bold">Certified Trainer</h3>
-                                <p class="text-sm text-gray-400">{All Certificates}</p>
+                                <p class="text-sm text-gray-400">Kineseology Degree, whatever Certificate</p>
                             </div>
                         </div>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-accent rounded-full icon-container mr-4">
-                                <i class="fas fa-bolt text-white"></i>
+                                <i class="fas fa-bolt text-white" aria-hidden="true"></i>
                             </div>
                             <div>
-                                <h3 class="font-bold">&infin; years experience</h3>
-                                <p class="text-sm text-gray-400">Helping clients get HUGE</p>
+                                <h3 class="font-bold">1+ years experience</h3>
+                                <p class="text-sm text-gray-400">Transforming bodies and lives</p>
                             </div>
                         </div>
                     </div>
@@ -74,7 +112,7 @@
                 <div class="w-full md:w-1/2 flex justify-center">
                     <div class="w-[80%] aspect-[3/4] bg-gradient-to-b from-accent/20 to-accent/5 rounded-xl p-1">
                         <div class="w-full h-full bg-darkgray rounded-lg overflow-hidden">
-                            <img src="public/kaylaPic.png" alt="Kayla" class="w-full h-full object-cover">
+                            <img src="public/kaylaPic.png" alt="Kayla Smith - Certified Strength Training Specialist" class="w-full h-full object-cover" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -247,7 +285,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Email</h4>
-                                    <p class="text-gray-400">kaylasemail@email.com</p>
+                                    <p class="text-gray-400">kayla.smith100@live.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -257,11 +295,11 @@
                                 <div>
                                     <h4 class="font-bold">Social Media</h4>
                                     <div class="flex mt-2 space-x-4">
-                                        <a href="#" class="text-gray-400 hover:text-accent">
+                                        <a href="https://www.linkedin.com/" class="text-gray-400 transition-colors duration-300 hover:text-accent">
                                             <i class="fab fa-linkedin-in h-6 w-6"></i>
                                         </a>
-                                        <a href="#" class="text-gray-400 hover:text-accent">
-                                            <i class="fab fa-instagram h-6 w-6"></i>
+                                        <a href="https://www.instagram.com/" class="text-gray-400 transition-colors duration-300 hover:text-accent">
+                                            <i class="fab fa-instagram h-6 w-6 "></i>
                                         </a>
                                     </div>
                                 </div>
@@ -279,10 +317,10 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <h3 class="text-2xl font-bold text-white">KAYLA<span class="text-accent">FITNESS</span></h3>
-                    <p class="text-gray-400 mt-2">Strength training specialist</p>
+                    <p class="text-gray-400 mt-2">Strength training specialist in Alpharetta, GA</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">Home</a>
+                    <a href="/" class="text-gray-400 hover:text-accent transition-colors">Home</a>
                     <a href="#about" class="text-gray-400 hover:text-accent transition-colors">About</a>
                     <a href="#services" class="text-gray-400 hover:text-accent transition-colors">Services</a>
                     <a href="#contact" class="text-gray-400 hover:text-accent transition-colors">Contact</a>
@@ -294,7 +332,7 @@
             </div>
             <div class="text-center text-gray-500 text-sm">
                 &copy; 2025 Kayla Training. All rights reserved.
-                <div class="mt-1">Developed by <a href="http://www.jsmitty.com" class="text-accent hover:underline" target="_blank">JSmitty</a></div>
+                <div class="mt-2">Developed by <a href="www.jsmitty.com" class="text-accent hover:underline" target="_blank">JSmitty</a></div>
             </div>
         </div>
     </footer>
