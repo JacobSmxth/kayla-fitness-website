@@ -1,8 +1,8 @@
-# Kayla Fitness - Strength Training Specialist
+# Kayla Smith Fitness - Health & Weight Loss Specialist
 
 ## Description
 
-A professional website for Kayla Smith, a dedicated strength training specialist offering personalized fitness programs and nutritional guidance. This sleek, responsive site showcases Kayla's expertise and services in a modern, engaging format.
+A modern, professional website for Kayla Smith, a certified fitness coach specializing in sustainable weight loss and general health improvement at OneLife Fitness in Vickery, Cumming GA. This dynamic, responsive website showcases Kayla's expertise, services, and client transformations in an engaging and user-friendly format.
 
 ## Live Demo
 
@@ -10,42 +10,59 @@ Visit the live website: [Kayla Fitness](https://jacobsmxth.github.io/kayla-fitne
 
 ## Features
 
-- **Responsive Design**: Seamlessly adapts to all devices from mobile to desktop
-- **Dark Theme**: Professional dark color scheme with red accents for a modern fitness aesthetic
-- **Interactive Elements**: Smooth scrolling, animated section reveals, and hover effects
-- **Service Showcase**: Highlights personal training, custom programs, and nutritional guidance
-- **Availability Schedule**: Clear presentation of training hours
-- **Testimonials**: Client success stories with 5-star ratings
-- **Contact Form**: Easy-to-use form for potential clients to reach out
-- **Loading Screen**: Elegant entrance animation with progress indicator
+- **Modern Design**: Clean, professional dark theme with dynamic accents and smooth animations
+- **Fully Responsive**: Optimized for all devices from mobile phones to large desktop screens
+- **Accessibility**: WCAG compliant with aria-labels, semantic HTML, and keyboard navigation
+- **Interactive Elements**:
+  - Smooth scrolling navigation
+  - Animated section reveals
+  - Interactive service cards
+  - Dynamic loading screen
+  - Responsive navigation menu
+- **Key Sections**:
+  - Hero section with credentials showcase
+  - Comprehensive services overview
+  - Flexible training schedule
+  - Client testimonials and transformations
+  - Contact form with location integration
+- **Performance Optimized**: Fast loading times with optimized assets and progressive loading
 
 ## Technologies Used
 
-- HTML5
-- CSS
-- JavaScript
-- Font Awesome Icons
-
-## Screenshots
-
+- **Frontend**:
+  - HTML5 with semantic markup
+  - CSS3 with modern features (Grid, Flexbox, Animations)
+  - JavaScript (ES6+) for interactivity
+- **Libraries & Dependencies**:
+  - Font Awesome 6.5.1 for icons
+  - Google Fonts (Poppins)
+- **Development**:
+  - Git for version control
+  - Mobile-first responsive design
+  - Progressive enhancement principles
 
 ## Project Structure
 
 ```
 kayla-smith-website/
-
+├── index.html          # Main HTML file
+├── css/               # Stylesheet directory
+│   └── style.css      # Main stylesheet
+├── js/                # JavaScript directory
+├── images/            # Image assets
+└── README.md          # Project documentation
 ```
 
 ## Credits
 
-- Website developed by [JSmitty](http://www.jsmitty.com)
-- Hero image: Photo by [Danielle Cerullo](https://unsplash.com/@dncerullo) on [Unsplash](https://unsplash.com/photos/woman-standing-surrounded-by-exercise-equipment-CQfNt66ttZM)
-- Icons by [Font Awesome](https://fontawesome.com)
+- Website Development: [JSmitty](http://www.jsmitty.com)
+- Icons: [Font Awesome](https://fontawesome.com)
+- Fonts: [Google Fonts](https://fonts.google.com)
 
 ## License
 
-© 2025 Kayla Training. All rights reserved.
+© 2025 Kayla Smith Fitness. All rights reserved.
 
 ---
 
-*This website was designed to showcase strength training services in a professional, engaging manner while prioritizing user experience and mobile responsiveness.*
+*This website is designed and optimized to showcase professional fitness services while providing an excellent user experience across all devices. For questions or support, please contact the developer through the provided channels.*
