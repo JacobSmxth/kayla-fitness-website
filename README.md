@@ -22,9 +22,9 @@ Visit the live website: [Kayla Fitness](https://jacobsmxth.github.io/kayla-fitne
 ## Technologies Used
 
 - HTML5
-- CSS (TailwindCSS v4)
+- CSS
 - JavaScript
-- Font Awesome icons
+- Font Awesome Icons
 
 ## Screenshots
 
@@ -33,15 +33,7 @@ Visit the live website: [Kayla Fitness](https://jacobsmxth.github.io/kayla-fitne
 
 ```
 kayla-smith-website/
-├── index.html              # Main HTML document
-├── output.css              # Compiled TailwindCSS
-├── js/
-│   └── script.js           # JavaScript functionality
-├── public/
-│   ├── background.jpg      # Hero background image
-│   └── kaylaPic.png        # Trainer profile picture
-└── src/
-    └── input.css           # TailwindCSS source file
+
 ```
 
 ## Credits
