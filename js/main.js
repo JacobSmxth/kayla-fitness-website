@@ -91,110 +91,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 8000);
 });
 
-// Mobile Navigation
+// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
-    const body = document.body;
-    
-    const toggleMenu = () => {
-        navToggle.classList.toggle('active');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    // Toggle mobile menu
+    navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-    };
+        navToggle.setAttribute('aria-expanded', 
+            navToggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+        );
+    });
 
-    navToggle.addEventListener('click', toggleMenu);
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
+    // Close mobile menu when clicking a link
+    navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            toggleMenu();
-            
-            // Smooth scroll to section
-            const target = document.querySelector(link.getAttribute('href'));
-            if (target) {
-                setTimeout(() => {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }, 300); // Wait for menu animation to complete
-            }
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
-    // Close menu when clicking outside
+    // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (navMenu.classList.contains('active') && 
-            !navMenu.contains(e.target) && 
-            !navToggle.contains(e.target)) {
-            toggleMenu();
+        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         }
     });
 
-    // Close menu on escape key
+    // Handle escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-            toggleMenu();
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         }
     });
 });
-
-// Navbar Background on Scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-        navbar.style.padding = '15px 0';
-    } else {
-        navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.8)';
-        navbar.style.padding = '20px 0';
-    }
-});
-
-// Smooth Scroll for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Contact Form Handling
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
-    });
-}
-
-// Reveal Elements on Scroll
-const revealElements = document.querySelectorAll('.service-card, .schedule-item, .testimonial-card');
-
-const revealOnScroll = () => {
-    const windowHeight = window.innerHeight;
-    revealElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        if (elementTop < windowHeight - 100) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }
-    });
-};
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll); 

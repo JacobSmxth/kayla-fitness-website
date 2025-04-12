@@ -41,7 +41,7 @@
                 <li role="none"><a href="#services" role="menuitem">Services</a></li>
                 <li role="none"><a href="#schedule" role="menuitem">Schedule</a></li>
                 <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
-                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Start Journey</a></li>
             </ul>
         </div>
     </nav>
@@ -141,7 +141,7 @@
                             <i class="fas fa-sun"></i>
                         </div>
                         <h3>Weekdays</h3>
-                        <p class="time">5:00 AM - 11:00 PM</p>
+                        <p class="time"><i class="far fa-clock"></i> 5:00 AM - 11:00 PM</p>
                         <p class="schedule-info">Peak hours: 5:00 PM - 8:00 PM</p>
                         <div class="availability-badge">Most Available</div>
                     </div>
@@ -150,7 +150,7 @@
                             <i class="fas fa-calendar"></i>
                         </div>
                         <h3>Friday</h3>
-                        <p class="time">5:00 AM - 9:00 PM</p>
+                        <p class="time"><i class="far fa-clock"></i> 5:00 AM - 10:00 PM</p>
                         <p class="schedule-info">Peak hours: 4:00 PM - 7:00 PM</p>
                         <div class="availability-badge">Semi-Available</div>
                     </div>
@@ -159,8 +159,8 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <h3>Weekends</h3>
-                        <p class="time">7:00 AM - 7:00 PM</p>
-                        <p class="schedule-info">Limited spots available</p>
+                        <p class="time"><i class="far fa-clock"></i> 8:00 AM - 6:00 PM</p>
+                        <p class="schedule-info">Saturdays Only</p>
                         <div class="availability-badge special">By Appointment</div>
                     </div>
                 </div>
@@ -254,68 +254,18 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" style="margin-bottom: 40px;">
                     <h2>Start Your Journey</h2>
-                    <p>Take the first step towards your fitness goals today</p>
+                    <p>Ready to transform your health and fitness?</p>
                 </div>
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <i class="fas fa-phone"></i>
-                            <h3>Book a Free Consultation</h3>
-                            <p>Schedule a 30-minute call to discuss your goals and find the perfect program for you</p>
-                        </div>
-                        <div class="contact-benefits">
-                            <h4>What to Expect:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Personalized fitness assessment</li>
-                                <li><i class="fas fa-check-circle"></i> Goal setting & timeline planning</li>
-                                <li><i class="fas fa-check-circle"></i> Program recommendations</li>
-                                <li><i class="fas fa-check-circle"></i> Pricing & package options</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <form id="contact-form" class="contact-form" role="form" aria-label="Contact form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" required aria-required="true">
-                                <label for="name">Your Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" required aria-required="true">
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="tel" id="phone" name="phone" required aria-required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="phone-format">
-                                <label for="phone">Phone Number</label>
-                                <small id="phone-format" class="sr-only">Format: 123-456-7890</small>
-                            </div>
-                            <div class="form-group">
-                                <select id="program" name="program" required aria-required="true">
-                                    <option value="" disabled selected>Select Program</option>
-                                    <option value="personal">Personal Training</option>
-                                    <option value="custom">Custom Program</option>
-                                    <option value="nutrition">Nutrition Guidance</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" required aria-required="true"></textarea>
-                            <label for="message">Tell me about your goals</label>
-                        </div>
-                        <div class="form-footer">
-                            <button type="submit" class="submit-button">
-                                <span>Schedule Consultation</span>
-                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                            </button>
-                            <p class="form-note">
-                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                                <span>Your information is secure and will never be shared</span>
-                            </p>
-                        </div>
-                    </form>
+                <div class="contact-content" style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <p style="color: var(--text-color-muted); margin-bottom: 30px; font-size: 1.1rem;">
+                        All personal training sessions are conducted at OneLife Fitness in Vickery. To get started, please visit their website to sign up for a membership and explore their facilities.
+                    </p>
+                    <a href="https://www.onelifefitness.com/gyms/vickery" target="_blank" rel="noopener noreferrer" class="cta-button" style="display: inline-block; text-decoration: none;">
+                        Visit OneLife Fitness Vickery
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -334,15 +284,6 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
-                        <li><a href="#testimonials">Success Stories</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <h3>Contact Info</h3>
                     <ul class="contact-info" aria-label="Contact Information">
                         <li><i class="fas fa-phone" aria-hidden="true"></i> <span>(770) 871-1900</span></li>
@@ -351,12 +292,14 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Training Hours</h3>
+                    <h3>OneLife Fitness Vickery Hours</h3>
                     <ul class="hours-info">
-                        <li>Monday - Thursday: 5:00 AM - 11:00 PM</li>
-                        <li>Friday: 5:00 AM - 9:00 PM</li>
-                        <li>Saturday - Sunday: 7:00 AM - 7:00 PM</li>
+                        <li>Monday - Thursday: 5:00 AM – 11:00 PM</li>
+                        <li>Friday: 5:00 AM – 10:00 PM</li>
+                        <li>Saturday: 8:00 AM – 6:00 PM</li>
+                        <li>Sunday: 8:00 AM – 6:00 PM</li>
                     </ul>
+                    <a href="https://www.onelifefitness.com/gyms/vickery" target="_blank" rel="noopener noreferrer" class="onelife-link" style="display: block; margin-top: 10px; color: var(--primary-color); text-decoration: underline;">Visit OneLife Vickery Site</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -366,12 +309,87 @@
     </footer>
 
     <!-- Developer Attribution -->
-    <a href="https://github.com/jacobsmxth" class="developer-attribution" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
-        <span>Developed by JSmitty</span>
+    <a href="https://jsmitty.com" class="developer-attribution" target="_blank" rel="noopener noreferrer">
+        Developed by Jacob Smith
     </a>
 
-    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            const loadingScreen = document.querySelector('.loading-screen');
+            const progressBar = document.querySelector('.progress');
+            const loadingStatus = document.querySelector('.loading-status');
+
+            // Loading Screen Logic
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        loadingScreen.style.opacity = '0';
+                        setTimeout(() => loadingScreen.style.display = 'none', 600);
+                    }, 500); // Short delay after reaching 100%
+                }
+                progressBar.style.width = progress + '%';
+                if (progress < 30) {
+                    loadingStatus.textContent = 'Warming up...';
+                } else if (progress < 70) {
+                    loadingStatus.textContent = 'Loading resources...';
+                } else {
+                    loadingStatus.textContent = 'Finalizing setup...';
+                }
+            }, 150); // Simulate loading time
+
+            // Mobile Navigation Toggle
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                    const isExpanded = navMenu.classList.contains('active');
+                    navToggle.setAttribute('aria-expanded', isExpanded);
+                });
+
+                // Close menu when a link is clicked
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            navToggle.classList.remove('active');
+                            navToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                });
+            }
+            
+            // Intersection Observer for scroll animations
+            const animatedElements = document.querySelectorAll('.service-card, .schedule-item, .testimonial-card, .contact-form, .contact-info');
+            const observerOptions = {
+                root: null, // relative to document viewport 
+                rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
+                threshold: 0.1 // visible amount of item shown in relation to root
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+
+        });
+    </script>
 
 </body>
 </html> 
